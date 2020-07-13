@@ -4,12 +4,21 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SistemaVenda.DAL;
+using SistemaVenda.Entidades;
 using SistemaVenda.Models;
 
 namespace SistemaVenda.Controllers
 {
     public class HomeController : Controller
     {
+        protected ApplicationDbContext Repositorio;
+
+        public HomeController(ApplicationDbContext repositorio)
+        {
+            Repositorio = repositorio;
+        }
+
         public IActionResult Index()
         {
             return View();
