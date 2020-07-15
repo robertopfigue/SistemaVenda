@@ -10,9 +10,9 @@ namespace SistemaVenda.DAL
     public class ApplicationDbContext : DbContext
     {
         public DbSet<Categoria> Categoria { get; set; }
-        public DbSet<Produto> Produtos { get; set; }
-        public DbSet<Cliente> Clientes { get; set; }
-        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Produto> Produto { get; set; }
+        public DbSet<Cliente> Cliente { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Venda> Venda { get; set; }
         public DbSet<VendaProdutos> VendaProdutos { get; set; }
 
