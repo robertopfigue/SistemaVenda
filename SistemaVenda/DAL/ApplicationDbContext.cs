@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SistemaVenda.DAL
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : DbContext, IApplicationDbContext
     {
         public DbSet<Categoria> Categoria { get; set; }
         public DbSet<Produto> Produto { get; set; }
